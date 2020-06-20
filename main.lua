@@ -193,7 +193,7 @@ function love.draw()
         
     elseif gameState == 'done' then   
     love.graphics.setFont(largeFont)
-    love.graphics.printf('Player ' .. tostring(servingPlayer) .. "Wins!", 0, 10, VIRTUAL_WIDTH, 'center')
+    love.graphics.printf('Player ' .. tostring(winningPlayer) .. "Wins!", 0, 10, VIRTUAL_WIDTH, 'center')
     love.graphics.setFont(smallFont)
     love.graphics.printf('Press Enter to Restart!', 0, 30, VIRTUAL_WIDTH, 'center')
     sounds['over']:play()
